@@ -349,18 +349,17 @@ label {
 .ds-main-nav{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -350px;
     width: 350px;
     height: 100vh;
     padding: 24px;
     background-color: rgba(0,0,0,1);
-    transform: translateX(350px);
-    transition: .8s;
+    transition: .6s;
 }
 
 .ds-main-nav.show{
-    transform: translateX(0);
-    animation: fadeInRight .8s;
+    right: 0;
+    animation: fadeInRight .6s;
 }
 
 .ds-main-nav .nav-menu{
