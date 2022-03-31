@@ -457,6 +457,10 @@ label {
 
 /* Banner */
 
+.ds-banner .swiper-wrapper{
+    z-index: -1;
+}
+
 .ds-banner .swiper-slide{
     position: relative;
     width: 100%;
