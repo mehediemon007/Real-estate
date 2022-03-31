@@ -308,8 +308,14 @@ label {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 100px;
+    padding: 16px 100px;
     z-index: 5;
+    transition: var(--transition);
+}
+
+.ds-header.sticky{
+    background-color: var(--white-color);
+    padding: 8px 100px;
 }
 
 .header-wpr{
@@ -552,6 +558,34 @@ label {
     }
 } */
 
+/* About us */
+
+.about-img{
+    width: 60%;
+    height: 500px;
+    background-image: url("../images/banner/about-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-us .about-content{
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    right: 0;
+    background-color: var(--heading-color);
+    padding: 25px 40px;
+}
+
+.about-content .heading-lg{
+    margin: 5px 0 24px 10px;
+}
+
+.about-content .subs-btn{
+    width: 150px;
+}
+
 /* Featured Property */
 
 .single-property{
@@ -579,7 +613,8 @@ label {
     transition: var(--transition);
 }
 
-.single-property .ppt-content *{
+.single-property .ppt-content *,
+.about-us .about-content *{
     color: var(--white-color);
 }
 
@@ -611,6 +646,35 @@ label {
 
 .single-property .view-more-btn{
     text-decoration: underline;
+}
+
+/* Contact */
+
+.ds-contact .heading-lg,
+.about-content .heading-lg{
+    color: var(--primary-color);
+}
+
+.subs-form input{
+    width: 80%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.subs-btn{
+    width: 18%;
+    height: 50px;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--dark-color);
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    margin-left: 5px !important;
+}
+
+.contact-img{
+    padding: 10px;
+    border: 5px solid var(--primary-color);
 }
 
 /* Footer */
@@ -658,4 +722,16 @@ label {
 .footer-list li a i{
     font-size: 1rem;
     color: var(--primary-color);
+}
+
+.footer-ppt{
+    display: block;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+.footer-ppt img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
