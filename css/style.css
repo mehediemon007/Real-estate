@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 :root {
     /* Colors */
-    --primary-color: #3C1874;
+    --primary-color: #FF9001;
     --secondary-color: #FF3A27;
     --primary-gradient-color: linear-gradient(90deg, #FF3A27 0%, #FF3A27 0.01%, #FF6D27 100%);
     --text-color: #3e3e3e;
@@ -293,7 +293,7 @@ label {
     left: 0;
     width: 100%;
     padding: 0 100px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .header-wpr{
@@ -308,12 +308,7 @@ label {
     gap: 32px;
 }
 
-.nav-search{
-    position: relative;
-    text-align: right;
-}
-
-.nav-search input{
+/* .nav-search input{
     width: 40%;
     font-size: .90rem;
     color: var(--white-color);
@@ -326,23 +321,79 @@ label {
 
 .nav-search input:focus{
     width: 100%;
-}
+} */
 
 .nav-search .search-icon{
     display: inline-block;
-    position: absolute;
+    /* position: absolute;
     height: 100%;
     top: 4px;
-    right: 10px;
-    color: var(--white-color);
+    right: 10px; */
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+    padding: 30px 16px;
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.nav-modal.show{
+    display: flex;
+}
+
+.nav-search-input {
+    position: relative;
+    width: 100%;
+    margin: 0 10px;
+    animation: fadeInUp 1s;
+}
+
+.nav-search-input input {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    background-color: #d3d3d3;
+    padding: 8px 14px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.nav-search-input .search-icon {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    color: var(--primary-color);
+}
+
+.serach-close{
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: right;
+    cursor: pointer;
 }
 
 .nav-toggle{
     display: inline-block;
     width: 30px;
     height: 30px;
-    font-size: 1.5rem;
-    color: var(--white-color);
+    font-size: 1.20rem;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 28px;
     cursor: pointer;
 }
 

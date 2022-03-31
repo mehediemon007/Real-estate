@@ -1,6 +1,7 @@
 ;(function($){
 
     // Aos
+
     $(window).on("scroll", function () {
         AOS.init();
     });
@@ -10,6 +11,20 @@
     $(".nav-toggle").on("click",function(){
 
         $(".ds-main-nav").toggleClass("show")
+    })
+
+    // Nav Modal
+
+    $(".nav-icon .nav-search").on("click",function(){
+
+      $(".nav-modal").addClass("show");
+
+    })
+
+    $(".serach-close").on("click",function(){
+
+        $(".nav-modal").removeClass("show")
+
     })
 
 })(jQuery);
