@@ -29,7 +29,7 @@
 
     // Sub Menu
 
-    $(".nav-menu li.has-children a").on('click',function(e){
+    $(".nav-menu li.has-children > a").on('click',function(e){
 
       e.preventDefault();
       $(this).next(".sub-menu").slideToggle();

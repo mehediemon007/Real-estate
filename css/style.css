@@ -301,6 +301,10 @@ label {
     padding: 50px 0;
 }
 
+.mt-scroll{
+    scroll-margin-top: 80px;
+}
+
 /* Header */
 
 .ds-header{
