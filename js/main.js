@@ -1,47 +1,47 @@
 ;(function($){
 
     // Aos
-
+  
     $(window).on("scroll", function () {
         AOS.init();
     });
     
     // Toggle Nav Menu
-
+  
     $(".nav-toggle").on("click",function(){
-
+  
         $(".ds-main-nav").toggleClass("show")
     })
-
+  
     // Nav Modal
-
+  
     $(".nav-icon .nav-search").on("click",function(){
-
+  
       $(".nav-modal").addClass("show");
-
+  
     })
-
+  
     $(".serach-close").on("click",function(){
-
+  
         $(".nav-modal").removeClass("show")
-
+  
     })
-
-})(jQuery);
-
-(function(){
-
+  
+  })(jQuery);
+  
+  (function(){
+  
   // Sticky Nav
-
+  
   const headerContainer = document.querySelector(".ds-header");
   window.onscroll = ()=>{
           this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
   }
-
+  
     // Banner
-
+  
     var interleaveOffset = 0.5;
-
+  
     var mySwiper = new Swiper ('.ds-banner', {
         // Optional parameters
         direction: 'horizontal',
@@ -60,11 +60,11 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-
+  
         autoplay: {
             delay: 2000,
         },
-
+  
         on: {
           progress: function() {
             var swiper = this;
@@ -122,7 +122,8 @@
     $(".slide-captions").html(function() {
       return "<h2 class='current-title'>" + currentTitle + "</h2>" + "<h3 class='current-subtitle'>" + currentSubtitle + "</h3>";
     });
-
-})()
-
-
+  
+  })()
+  
+  
+  
