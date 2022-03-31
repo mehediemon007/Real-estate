@@ -442,6 +442,11 @@ label {
     justify-content: center;
 }
 
+.nav-menu .sub-menu{
+    display: none;
+    padding-left: 24px;
+}
+
 .nav-menu li{
     display: block;
 }
@@ -451,7 +456,17 @@ label {
     font-size: 1.5rem;
     color: #d3d3d3;
     text-align: center;
-    margin: 24px 0;
+    padding: 24px 0;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover{
+    color: var(--primary-color);
+}
+
+.nav-menu .sub-menu li a{
+    font-size: 1.25rem;
+    padding: 10px 0;
 }
 
 
