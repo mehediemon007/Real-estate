@@ -35,7 +35,7 @@
 
   const headerContainer = document.querySelector(".ds-header");
   window.onscroll = ()=>{
-          this.scrollY > 150 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+          this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
   }
 
     // Banner
