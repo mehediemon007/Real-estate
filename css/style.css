@@ -457,13 +457,13 @@ label {
 
 /* Banner */
 
-.single-slide{
+.ds-banner .swiper-slide{
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.single-slide::before{
+.ds-banner .swiper-slide::before{
     position: absolute;
     content: "";
     width: 100%;
