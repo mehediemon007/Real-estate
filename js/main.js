@@ -40,7 +40,7 @@
   
     // Banner
   
-    var interleaveOffset = 0.5;
+    // var interleaveOffset = 0.5;
   
     var mySwiper = new Swiper ('.ds-banner', {
         // Optional parameters
@@ -65,32 +65,32 @@
             delay: 2000,
         },
   
-        on: {
-          progress: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              var slideProgress = swiper.slides[i].progress;
-              var innerOffset = swiper.width * interleaveOffset;
-              var innerTranslate = slideProgress * innerOffset;
-              swiper.slides[i].querySelector(".single-slide").style.transform =
-                "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
-          },
-          touchStart: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = "";
-            }
-          },
-          setTransition: function(speed) {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = speed + "ms";
-              swiper.slides[i].querySelector(".single-slide").style.transition =
-                speed + "ms";
-            }
-          }
-        }
+        // on: {
+        //   progress: function() {
+        //     var swiper = this;
+        //     for (var i = 0; i < swiper.slides.length; i++) {
+        //       var slideProgress = swiper.slides[i].progress;
+        //       var innerOffset = swiper.width * interleaveOffset;
+        //       var innerTranslate = slideProgress * innerOffset;
+        //       swiper.slides[i].querySelector(".single-slide").style.transform =
+        //         "translate3d(" + innerTranslate + "px, 0, 0)";
+        //     }      
+        //   },
+        //   touchStart: function() {
+        //     var swiper = this;
+        //     for (var i = 0; i < swiper.slides.length; i++) {
+        //       swiper.slides[i].style.transition = "";
+        //     }
+        //   },
+        //   setTransition: function(speed) {
+        //     var swiper = this;
+        //     for (var i = 0; i < swiper.slides.length; i++) {
+        //       swiper.slides[i].style.transition = speed + "ms";
+        //       swiper.slides[i].querySelector(".single-slide").style.transition =
+        //         speed + "ms";
+        //     }
+        //   }
+        // }
         // on: {
         //   slideChangeTransitionStart: function () {
         //       // Slide captions
