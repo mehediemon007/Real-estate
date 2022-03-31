@@ -591,6 +591,7 @@ label {
 .single-property{
     position: relative;
     overflow: hidden;
+    margin-bottom: 24px;
 }
 
 .single-property .ppt-image{
@@ -682,7 +683,6 @@ label {
 .ds-footer{
     position: relative;
     background-image: url("../images/banner/footer-bg.jpg");
-    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 0;
