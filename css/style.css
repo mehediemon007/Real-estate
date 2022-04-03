@@ -810,6 +810,10 @@ label {
     outline: none;
 }
 
+.location iframe{
+    width: 100%;
+}
+
 /* Footer */
 
 .ds-footer{

@@ -28,4 +28,18 @@
         width: 100%;
         margin-top: 32px;
     }
+
+    .sec-spacer-80{
+        padding: 40px 0;
+    }
+}
+
+/* Max Width 575px */
+
+@media only screen and (max-width:575px){
+
+    .ds-header,
+    .ds-header.sticky{
+        padding: 8px 20px;
+    }
 }
