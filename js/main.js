@@ -1,5 +1,12 @@
 ;(function($){
 
+    // Counter
+
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+    });
+
     // Aos
   
     $(window).on("scroll", function () {
