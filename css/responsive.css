@@ -30,7 +30,11 @@
     }
 
     .sec-spacer-80{
-        padding: 40px 0;
+        padding: 50px 0;
+    }
+
+    #about{
+        padding-top: 50px;
     }
 }
 
@@ -71,5 +75,13 @@
 
     .ds-feature-property .sub-heading{
         display: block;
+    }
+
+    .properties .row div[class^="col-"]{
+        width: 100%;
+    }
+
+    .single-property .ppt-content{
+        height: 16%;
     }
 }
