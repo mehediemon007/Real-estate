@@ -1,0 +1,31 @@
+/* Max Width 1200px */
+@media only screen and (max-width:1200px){
+
+    .swiper-button-prev{
+        right: 20%;
+    }
+}
+
+/* Max Width 991px */
+@media only screen and (max-width:991px){
+
+    .subs-form input{
+        width: 100%;
+    }
+
+    .subs-btn{
+        width: 120px;
+        margin-top: 16px;
+        margin-left: 0 !important;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+    .about-us .about-content{
+        position: relative;
+        width: 100%;
+        margin-top: 32px;
+    }
+}
