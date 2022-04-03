@@ -733,6 +733,25 @@ label {
     text-decoration: underline;
 }
 
+.projects-links{
+    width: 100%;
+    background-color: var(--heading-color);
+}
+
+.projects-links .nav-item{
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.projects-links .nav-link{
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+.projects-links .nav-link.active{
+    background-color: var(--primary-color);
+}
+
 /* Contact */
 
 .ds-contact .heading-lg,
