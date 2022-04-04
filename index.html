@@ -69,57 +69,59 @@
 
         <!-- Banner -->
 
-        <div class="ds-banner-wpr">
-            <div class="swiper ds-banner">
+        <div class="multi-px-slider loading">
+            <div class="swiper-container lg-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="single-slide">
-                            <img src="images/banner/banner1.jpg" alt="Banner1">
-                            <div class="slide-content">
-                                <div class="container">
-                                    <h1 class="slide-title">WEL COME TO</h1>
-                                    <p class="slide-des">DIHAN REAL ESTATE</p>
-                                </div>
-                            </div>
+                        <div class="mps-slide">
+                            <div class="mps-img img-lg"><img data-src="./images/banner/banner1.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="single-slide">
-                            <img src="images/banner/banner2.jpg" alt="Banner">
-                            <div class="slide-content">
-                                <div class="container">
-                                    <h1 class="slide-title">WEL COME TO</h1>
-                                    <p class="slide-des">DIHAN MULTI BUILDING</p>
-                                </div>
-                            </div>
+                        <div class="mps-slide">
+                            <div class="mps-img img-lg"><img data-src="./images/banner/banner2.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="single-slide">
-                            <img src="images/banner/banner3.jpg" alt="Banner">
-                            <div class="slide-content">
-                                <div class="container">
-                                    <h1 class="slide-title">WEL COME TO</h1>
-                                    <p class="slide-des">DIHAN SHOPPING MALL</p>
-                                </div>
-                            </div>
+                        <div class="mps-slide">
+                            <div class="mps-img img-lg"><img data-src="./images/banner/banner3.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="swiper-button-next">
-                    <span>NEXT <i class="fa-solid fa-arrow-right-long"></i></span>
-                </div>
-                <div class="swiper-button-prev">
-                    <span><i class="fa-solid fa-arrow-left-long"></i> PREV</span>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="banner-social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <div class="pattern-2" data-swiper-parallax="-50%"></div>
+            </div>
+        
+            <div class="swiper-container sm-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mps-slide">
+                            <div class="mps-img img-sm"><img data-src="./images/banner/banner2.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mps-slide">
+                            <div class="mps-img img-sm"><img data-src="./images/banner/banner3.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mps-slide">
+                            <div class="mps-img img-sm"><img data-src="./images/banner/banner1.jpg" alt="" class="swiper-lazy object-fit"></div>
+                            <div class="swiper-lazy-preloader"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        
+            <button type="button" class="mps-arrow mps-prev" aria-label="Previous"><i class="fa-solid fa-arrow-left-long"></i> PREV</button>
+            <button type="button" class="mps-arrow mps-next" aria-label="Next">NEXT <i class="fa-solid fa-arrow-right-long"></i></button>
+        
+            <div class="curtain"></div>
+        
         </div>
 
         <!-- About -->
@@ -358,6 +360,7 @@
     <script src="js/gsap.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/demo.js"></script>
 
 </body>
 </html>
