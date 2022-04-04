@@ -447,17 +447,31 @@ label {
 .ds-main-nav{
     position: fixed;
     top: 0;
-    right: -350px;
-    width: 350px;
+    right: -100%;
+    width: 100%;
     height: 100vh;
     padding: 24px;
     background-color: rgba(0,0,0,1);
-    transition: .6s;
+    transition: .8s;
 }
 
 .ds-main-nav.show{
     right: 0;
-    animation: fadeInRight .6s;
+}
+
+.nav-menu-wpr{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   padding: 100px 0;
+}
+
+.nav-image img{
+    opacity: 0;
+    transition: opacity 1s .8s;
+}
+
+.ds-main-nav.show .nav-image img{
+    opacity: 1;
 }
 
 .ds-main-nav .nav-menu{
@@ -465,6 +479,10 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: .5s 1s;
 }
 
 .nav-menu .sub-menu{
@@ -478,16 +496,40 @@ label {
 
 .nav-menu li a{
     display: block;
-    font-size: 1.5rem;
-    color: #d3d3d3;
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    -webkit-text-stroke: 1px var(--primary-color);
     text-align: center;
     padding: 24px 0;
 }
 
-.nav-menu li a.active,
+.ds-main-nav.show .nav-menu{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ds-main-nav.show .nav-menu li a{
+    animation: color-fill 4s ease;
+}
+
+@keyframes color-fill{
+    0%{
+        color: transparent;
+    }100%{
+        color: var(--primary-color);
+    }
+}
+
+.has-children .fa-angle-down{
+    position: relative;
+    top: -5px;
+}
+
+/* .nav-menu li a.active,
 .nav-menu li a:hover{
     color: var(--primary-color);
-}
+} */
 
 .nav-menu .sub-menu li a{
     font-size: 1.25rem;
@@ -504,9 +546,11 @@ label {
 }
 
 /* plugin overrides */
+
 .swiper-wrapper {
 	height: 100%;			
 }
+
 .swiper-slide {
 	backface-visibility: hidden;
 	overflow: hidden;			
@@ -514,6 +558,7 @@ label {
 
 
 /* my stuff */
+
 .multi-px-slider {
 	height: 100vh;
 	position: relative;
@@ -552,14 +597,18 @@ label {
 /* Arrows */
 .mps-arrow {
 	position: absolute;
+    font-size: 1.25rem;
+    color: var(--white-color);
 	bottom: 5%;
 	right: 10%;
 	z-index: 3;
 	transform: translateY(-50%);
+    background-color: transparent;
 }
 
 .mps-prev {
 	right: 15%;
+    left: auto;
 }
 
 /* .mps-next {
