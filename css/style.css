@@ -602,6 +602,7 @@ label {
 
 .slide-content.init .slide-title,
 .slide-content.init .slide-des{
+    transition: var(--transition);
     transition-delay: 0s;
 }
 
