@@ -1,7 +1,7 @@
 /* Max Width 1200px */
 @media only screen and (max-width:1200px){
 
-    .swiper-button-prev{
+    .mps-prev{
         right: 20%;
     }
 }
@@ -45,6 +45,23 @@
     .single-property .ppt-content{
         height: 37%;
     }
+
+    .sm-slider{
+        width: 0;
+    }
+
+    .lg-slider{
+        width: 100%;
+    }
+
+    .mps-prev{
+        right: 55%;
+    }
+
+    .mps-next{
+        right: 35%;
+    }
+    
 }
 
 /* Max Width 575px */
@@ -69,6 +86,10 @@
 
 @media only screen and (max-width:414px){
 
+    h4{
+        font-size: 1.10rem;
+    }
+
     .ds-footer .row div[class^="col-"]{
         width: 100%;
     }
@@ -83,5 +104,22 @@
 
     .single-property .ppt-content{
         height: 16%;
+    }
+
+    .heading-lg{
+        font-size: 2.8rem;
+    }
+
+    .ds-contact .contact-heading{
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Max Width 320px */
+
+@media only screen and (max-width:320px){
+    .mps-next{
+        right: 30%;
     }
 }

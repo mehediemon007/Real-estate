@@ -602,7 +602,7 @@ label {
 
 .slide-content.init .slide-title,
 .slide-content.init .slide-des{
-    transition-delay: .5s;
+    transition-delay: 0s;
 }
 
 .swiper-slide-active .slide-title,
