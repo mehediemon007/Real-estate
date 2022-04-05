@@ -1,3 +1,14 @@
+/* Min Width 1400px */
+@media only screen and (min-width:1400px){
+    .mps-prev{
+        right: 15%;
+    }
+
+    .single-property:hover .ppt-content{
+        height: 28%;
+    }
+}
+
 /* Max Width 1200px */
 @media only screen and (max-width:1200px){
 
