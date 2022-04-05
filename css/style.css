@@ -339,8 +339,7 @@ label {
 }
 
 .ds-header.sticky{
-    background-color: var(--white-color);
-    padding: 8px 100px;
+    position: absolute;
 }
 
 .header-wpr{
@@ -698,8 +697,8 @@ label {
 }
 
 .single-counter .counter{
+    color: var(--white-color);
     font-size: 1.75rem;
-    color: var(--primary-color);
 }
 
 .single-counter p{
@@ -724,7 +723,6 @@ label {
 }
 
 .quality-content h5{
-    color: var(--primary-color);
     margin-bottom: 16px;
 }
 
@@ -815,11 +813,6 @@ label {
 }
 
 /* Contact */
-
-.ds-contact .heading-lg,
-.about-content .heading-lg{
-    color: var(--primary-color);
-}
 
 .subs-form input{
     width: 80%;
