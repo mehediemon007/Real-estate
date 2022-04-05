@@ -78,7 +78,7 @@
         <div class="multi-px-slider loading">
 
             <div class="swiper-container lg-slider">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper position-relative">
                     <div class="swiper-slide">
                         <div class="mps-slide">
                             <div class="mps-img img-lg"><img data-src="images/banner/banner1.jpg" alt="" class="swiper-lazy object-fit"></div>
@@ -98,7 +98,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
                 <div class="pattern-2" data-swiper-parallax="-50%"></div>
+                <div class="banner-social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         
             <div class="swiper-container sm-slider">
@@ -432,6 +438,12 @@
             lazy: {
                 loadPrevNext: true,
                 loadPrevNextAmount: 2,
+            },
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            clickable: true,
             },
             watchSlidesProgress: true,
             watchSlidesVisibility: true,
