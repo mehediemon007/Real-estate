@@ -96,15 +96,34 @@
 
     .nav-menu{
         position: absolute;
+        width: 100%;
         top: 0;
-        left: 35%;
-        transform: translateX(-35%);
+        left: 0;
+    }
+
+    .nav-menu li a{
+        font-size: 2rem;
+        padding: 16px 0;
     }
 }
 
 /* Max Width 414px */
 
 @media only screen and (max-width:414px){
+
+    .multi-px-slider {
+        height: 70vh;
+    }
+
+    .swiper-pagination{
+        bottom: 10%;
+        left: 0;
+    }
+
+    .banner-social-links a{
+        position: relative;
+        top: -10px;
+    }
 
     h4{
         font-size: 1.10rem;
