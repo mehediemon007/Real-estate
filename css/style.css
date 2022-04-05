@@ -568,6 +568,49 @@ label {
     object-fit: cover; 
 }
 
+.mps-slide .slide-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mps-slide .slide-title{
+    font-size: 3rem;
+    color: var(--white-color);
+    transition: 1.2s;
+    transition-delay: 1s;
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.mps-slide .slide-des{
+    font-size: 1.25rem;
+    color: var(--white-color);
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+
+.slide-content.init .slide-title,
+.slide-content.init .slide-des{
+    transition-delay: .5s;
+}
+
+.swiper-slide-active .slide-title,
+.swiper-slide-active .slide-des{
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+}
+
 /* plugin overrides */
 
 .swiper-wrapper {
@@ -620,13 +663,53 @@ label {
 /* Arrows */
 .mps-arrow {
 	position: absolute;
-    font-size: 1.25rem;
+    font-size: 1.20rem;
+    font-weight: var(--font-weight-normal);
     color: var(--white-color);
 	bottom: 5%;
 	right: 10%;
 	z-index: 3;
 	transform: translateY(-50%);
     background-color: transparent;
+    overflow: hidden;
+}
+
+.mps-prev:hover i {
+    animation: toLeftFromRight 0.4s linear forwards;
+}
+
+.mps-next:hover i {
+    animation: toRightFromLeft 0.4s linear forwards;
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes toLeftFromRight {
+    49% {
+        -webkit-transform: translate(-100%);
+        transform: translate(-100%);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translate(100%);
+        transform: translate(100%);
+    }
+    51% {
+        opacity: 1;
+    }
 }
 
 .mps-prev {
