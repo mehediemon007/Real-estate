@@ -56,6 +56,14 @@
     window.onscroll = ()=>{
             this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
     }
+
+    // Theme Change
+
+    const checkbox = document.getElementById('theme-checkbox');
+
+    checkbox.addEventListener('change', ()=>{
+      document.body.classList.toggle('light-theme');
+    })
   
   
   })()
