@@ -84,7 +84,7 @@ h5,
 h6 {
     font-family: var(--title-font);
     font-weight: var(--font-weight-semi-bold);
-    color: var(--heading-color);
+    color: var(--dark-color);
     margin-bottom: 0;
     direction: var(--direction);
 }
@@ -568,10 +568,15 @@ label {
 
 .swiper-pagination{
     width: 100px;
+    color: var(--dark-color);
     background-color: var(--white-color);
     transform: rotate(-90deg);
     bottom: 15%;
     left: 10px;
+}
+
+.swiper-pagination span{
+    color: var(--dark-color);
 }
 
 .object-fit { 
@@ -780,6 +785,10 @@ label {
 	opacity: .3;		
 }
 
+.sec-banner-content h1{
+    color: var(--white-color);
+}
+
 /* About us */
 
 .about-img{
@@ -796,7 +805,7 @@ label {
     width: 50%;
     top: 15%;
     right: 0;
-    background-color: var(--heading-color);
+    background-color: var(--dark-color);
     padding: 25px 40px;
 }
 
@@ -915,7 +924,7 @@ label {
 
 .projects-links{
     width: 100%;
-    background-color: var(--heading-color);
+    background-color: var(--dark-color);
 }
 
 .projects-links .nav-item{
