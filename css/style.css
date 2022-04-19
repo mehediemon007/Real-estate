@@ -957,7 +957,7 @@ label {
     object-fit: cover;
 }
 
-.gallety-overlay{
+.gallery-overlay{
     position: absolute;
     left: 0;
     bottom: -100%;
@@ -971,11 +971,11 @@ label {
     transition: all .5s ease;
 }
 
-.gallety-overlay i{
+.gallery-overlay i{
     font-size: 1.5rem;
 }
 
-.single-gallery:hover .gallety-overlay{
+.single-gallery:hover .gallery-overlay{
     opacity: 1;
     bottom: 0;
 }

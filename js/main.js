@@ -1,5 +1,20 @@
 ;(function($){
 
+  // Gallery
+
+  if($(".ds-gallery").length){
+
+    $('.ds-gallery').magnificPopup({
+      delegate: '.gallery-overlay',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      gallery: {
+        enabled: true,
+      },
+    });
+
+  }
+
     // Counter
 
     if($('.counter').length){
