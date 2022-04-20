@@ -562,6 +562,46 @@ label {
     padding: 10px 0;
 }
 
+.menu-left{
+    display: flex;
+}
+
+.menu-left li{
+    position: relative;
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.menu-left li a{
+    display: block;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.menu-left li a i{
+    top: 0 !important;
+    color: var(--primary-color);
+}
+
+.menu-left .sub-menu{
+    display: none;
+    transform: translateY(-20px);
+    transition: var(--transition);
+}
+
+.menu-left li.has-children:hover .sub-menu{
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    padding: 16px 16px 0;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    transform: translateY(0);
+}
+
 
 /* Banner */
 
@@ -576,9 +616,16 @@ label {
 
 .banner-social-links a {
     display: inline-block;
+    position: relative;
+    font-size: 1.40rem;
     font-weight: var(--font-weight-normal);
     color: var(--primary-color);
     margin-right: 24px;
+    top: -5px;
+}
+
+.banner-social-links a i{
+    
 }
 
 .swiper-pagination{

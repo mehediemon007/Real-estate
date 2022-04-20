@@ -20,6 +20,10 @@
 /* Max Width 991px */
 @media only screen and (max-width:991px){
 
+    .menu-left{
+        display: none;
+    }
+
     .subs-form input{
         width: 100%;
     }
