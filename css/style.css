@@ -476,10 +476,23 @@ label {
     right: 0;
 }
 
+.ds-main-nav .main-nav-head{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    padding-bottom: 0;
+}
+
 .nav-menu-wpr{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   padding: 70px 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
 
 .nav-modal .brand-name{
@@ -499,10 +512,8 @@ label {
 }
 
 .ds-main-nav .nav-menu{
-    height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     opacity: 0;
     transform: translateY(200px);
