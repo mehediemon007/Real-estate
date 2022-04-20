@@ -836,6 +836,16 @@ label {
     background-image: url("../images/banner/about-banner.jpg");
 }
 
+.project-banner{
+    background-image: url("../images/banner/project-detail.jpg");
+    height: 100vh;
+}
+
+.project-banner .sec-banner-content{
+    flex-direction: column;
+    height: 100vh;
+}
+
 .single-counter{
     text-align: center;
 }
@@ -918,7 +928,7 @@ label {
 }
 
 .single-property:hover .ppt-content{
-    height: 33%;
+    height: 38%;
 }
 
 .single-property:hover .ppt-image img{
@@ -1004,6 +1014,41 @@ label {
 
 .single-gallery:hover .gallery-overlay{
     transform: scale(1);
+}
+
+/* Project Details */
+
+.project-calltoaction{
+    display: flex;
+    background-color: var(--heading-color);
+    padding: 24px;
+    margin-top: -70px;
+}
+
+.project-calltoaction .single-property{
+    position: relative;
+    padding: 8px 8px 8px 0;
+    margin-right: 10px;
+}
+
+.project-calltoaction .single-property:not(:last-of-type)::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.single-property h6{
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.project-details img{
+    border-radius: 4px;
+    margin-bottom: 24px;
 }
 
 /* Contact */
@@ -1215,3 +1260,31 @@ label {
     font-size: .90rem;
     color: yellow;
 } */
+
+#toTop {
+    text-align: center;
+    bottom: 90px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    right: 40px;
+    z-index: 999;
+    font-size: 18px;
+    /* transform: rotate(-45deg); */
+    color: var(--white-color);
+    background: var(--title-color);
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    transition: var(--transition);
+    box-shadow: 0 5px 30px rgba(255, 255, 255, 0.18);
+}
+
+#toTop i {
+    display: inline-block;
+}
+
+#toTop:hover {
+    background-color: var(--primary-color);
+}
