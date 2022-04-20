@@ -444,9 +444,8 @@ label {
 }
 
 .brand-head{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: inline;
+    margin-bottom: 24px;
 }
 
 .nav-toggle{
@@ -588,20 +587,17 @@ label {
     position: absolute;
     top: 100%;
     left: 0;
-    display: block;
+    display: none;
     min-width: 150px;
     padding: 16px 16px 0;
     background-color: rgba(0,0,0,.7);
     border-radius: 5px;
     transform: translateY(50px);
-    opacity: 0;
-    visibility: none;
     transition: var(--transition);
 }
 
 .menu-left li.has-children:hover .sub-menu{
-    opacity: 1;
-    visibility: visible;
+    display: block;
     transform: translateY(0);
 }
 
@@ -1323,7 +1319,6 @@ label {
     right: 40px;
     z-index: 999;
     font-size: 18px;
-    /* transform: rotate(-45deg); */
     color: var(--white-color);
     background: var(--title-color);
     height: 48px;
@@ -1331,7 +1326,7 @@ label {
     line-height: 48px;
     border-radius: 50%;
     transition: var(--transition);
-    box-shadow: 0 5px 30px rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 16px var(--primary-color);
 }
 
 #toTop i {
