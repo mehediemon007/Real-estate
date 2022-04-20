@@ -121,6 +121,17 @@
         font-size: 2rem;
         padding: 16px 0;
     }
+
+    .ds-main-nav .nav-menu{
+        height: 100%;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .nav-menu-wpr{
+        height: 100%;
+        padding: 0;
+    }
 }
 
 /* Max Width 414px */
@@ -167,6 +178,10 @@
 
     .ds-contact .contact-heading{
         margin-bottom: 30px;
+    }
+
+    .gallery-content div[class^=col-]{
+        width: 100%;
     }
 
 }
