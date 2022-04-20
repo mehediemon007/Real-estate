@@ -53,7 +53,10 @@
                 </div>
             </div>
             <div class="ds-main-nav">
-                <span class="nav-toggle .nav-close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <span class="nav-toggle .nav-close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
                 <div class="nav-menu-wpr">
                     <div class="text-center nav-image">
                         <img src="images/3d-building.png" alt="#d-Model"/>
@@ -69,7 +72,13 @@
                             </ul>
                         </li>
                         <li><a href="./gallery.html">Gallery</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="has-children"><a href="#">Contact <span class="text-white"><i class="fa-solid fa-angle-down"></i></span></a>
+                            <ul class="sub-menu">
+                                <li><a href="./owner-contact.html">Landowners</a></li>
+                                <li><a href="./buyer-contact.html">Buyers</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -271,7 +280,7 @@
                         <h5>Contact</h5>
                         <ul class="footer-list">
                             <li><a href="#" class="contact-link"><span><i class="fa-solid fa-map-location-dot"></i></span>House -01, 1st Floor, Shahid Latif Road, Mollartek, Dakkhin Khan, Dhaka-1230, Bangladesh.</a></li>
-                            <li><a href="tel:8802 4895 6505" class="contact-link"><span><i class="fa-solid fa-mobile"></i></span>+8802 4895 6505</a></li>
+                            <li><a href="tel:01970711766" class="contact-link"><span><i class="fa-solid fa-mobile"></i></span>+880-1970711766</a></li>
                             <li><a href="mailto:info@dihanshah.com" class="contact-link"><span><i class="fa-solid fa-envelope"></i></span> info@dihanshah.com</a></li>
                         </ul>
                     </div>
@@ -294,7 +303,9 @@
 
     <div class="nav-modal">
         <div class="container">
+            <a href="index.html" class="brand-head"><img src="images/logo.png" alt="Logo"></a>
             <span class="serach-close"><i class="fas fa-times"></i></span>
+            <h1 class="brand-name">Dihan Shah Properties Ltd.</h1>
             <div class="nav-search-input">
                 <input type="text" placeholder="Search for items and brands">
                 <span class="search-icon"><i class="fas fa-search"></i></span>
