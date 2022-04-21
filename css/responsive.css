@@ -111,15 +111,9 @@
 
     .ds-header,
     .ds-header.sticky{
-        width: 100vw;
         padding: 5px 15px;
     }
-
-    .ds-main-nav,
-    .nav-modal{
-        width: 100vw;
-    }
-
+    
     .ds-banner .swiper-slide{
         height: 400px;
     }
