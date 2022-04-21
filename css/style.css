@@ -323,7 +323,7 @@ label {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.4);
     z-index: -1;
 }
 
@@ -909,12 +909,24 @@ label {
 }
 
 .about-banner{
-    background-image: url("../images/banner/about-banner.jpg");
+    background-image: url("../images/banner/about-banner.jpeg");
 }
 
 .project-banner{
     background-image: url("../images/banner/project-detail.jpg");
     height: 100vh;
+}
+
+.contact-banner{
+    background-image: url("../images/banner/conatct-banner.jpeg");
+}
+
+.gallery-banner{
+    background-image: url("../images/banner/gallery-banner.jpeg");
+}
+
+.projects-banner{
+    background-image: url("../images/banner/projects-banner.jpeg");
 }
 
 .project-banner .sec-banner-content{
