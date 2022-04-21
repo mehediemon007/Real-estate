@@ -64,6 +64,10 @@
     .banner-social-links{
         bottom: 32%;
     }
+
+    .ds-contact{
+        margin-bottom: 40px;
+    }
 }
 
 /* Max Width 767px */
@@ -88,6 +92,15 @@
 
     .mps-next{
         right: 35%;
+    }
+
+    .project-calltoaction{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 16px;
+    }
+
+    .project-calltoaction .single-property:not(:last-of-type)::after{
+        content: none;
     }
     
 }
@@ -205,6 +218,10 @@
     .swiper-pagination,
     .banner-social-links{
         display: none;
+    }
+
+    .project-calltoaction{
+        grid-template-columns: 1fr;
     }
 
 }
