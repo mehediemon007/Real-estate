@@ -56,6 +56,14 @@
     #about{
         padding-top: 50px;
     }
+
+    .swiper-pagination{
+        bottom: 10%;
+    }
+
+    .banner-social-links{
+        bottom: 32%;
+    }
 }
 
 /* Max Width 767px */
@@ -90,7 +98,7 @@
 
     .ds-header,
     .ds-header.sticky{
-        padding: 8px 20px;
+        padding: 5px 15px;
     }
 
     .ds-banner .swiper-slide{
@@ -173,12 +181,13 @@
         display: block;
     }
 
-    .properties .row div[class^="col-"]{
+    .properties .row div[class^="col-"],
+    .projects-content .row div[class^="col-"]{
         width: 100%;
     }
 
     .single-property .ppt-content{
-        height: 16%;
+        height: 22%;
     }
 
     .heading-lg{
@@ -193,6 +202,11 @@
         width: 100%;
     }
 
+    .swiper-pagination,
+    .banner-social-links{
+        display: none;
+    }
+
 }
 
 /* Max Width 320px */
@@ -200,5 +214,13 @@
 @media only screen and (max-width:320px){
     .mps-next{
         right: 30%;
+    }
+
+    .single-property .ppt-content{
+        height: 32%;
+    }
+
+    .ds-header, .ds-header.sticky{
+        padding: 4px 10px;
     }
 }
