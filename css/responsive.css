@@ -115,7 +115,8 @@
         padding: 5px 15px;
     }
 
-    .ds-main-nav{
+    .ds-main-nav,
+    .nav-modal{
         width: 100vw;
     }
 

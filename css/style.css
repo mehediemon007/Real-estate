@@ -408,7 +408,7 @@ label {
     background-color: rgba(0,0,0,1);
     padding: 30px 16px;
     transition: var(--transition);
-    z-index: 10;
+    z-index: 100;
 }
 
 .nav-modal.show{
