@@ -343,7 +343,7 @@ label {
 
 .ds-header.sticky{
     background-color: rgba(0,0,0,.6);
-    padding: 12px 100px;
+    padding: 5px 100px;
 }
 
 .header-wpr{
@@ -537,7 +537,7 @@ label {
     color: var(--primary-color);
     -webkit-text-stroke: 1px var(--primary-color);
     text-align: center;
-    padding: 24px 0;
+    padding: 10px 0;
 }
 
 .ds-main-nav.show .nav-menu{
@@ -1069,6 +1069,7 @@ label {
 }
 
 .gallery-overlay p{
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -1079,16 +1080,21 @@ label {
 /* Project Details */
 
 .project-calltoaction{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
     background-color: var(--heading-color);
     padding: 24px;
     margin-top: -70px;
 }
 
+.light-theme .project-calltoaction{
+    box-shadow: 0px 5px 20px rgba(0,0,0,.2);
+}
+
 .project-calltoaction .single-property{
     position: relative;
-    padding: 8px 8px 8px 0;
-    margin-right: 10px;
+    padding: 0 16px;
+    margin-bottom: 0;
 }
 
 .project-calltoaction .single-property:not(:last-of-type)::after{
@@ -1101,9 +1107,15 @@ label {
     background-color: var(--white-color);
 }
 
+.light-theme .single-property:not(:last-of-type)::after{
+    background-color: var(--dark-color);
+}
+
 .single-property h6{
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 8px;
 }
 
 .project-details img{
@@ -1112,6 +1124,10 @@ label {
 }
 
 /* Contact */
+
+.ds-contact{
+    margin-bottom: 100px;
+}
 
 .subs-form input{
     width: 80%;
@@ -1235,13 +1251,18 @@ label {
     font-size: .95rem;
     font-weight: var(--font-weight-semi-bold);
     color: var(--primary-color);
-    margin-top: 24px;
+    margin-top: 50px;
 }
 
 .footer-widget .footer-list li a{
     display: grid;
     grid-template-columns: 30px 1fr;
     margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-widget .footer-list li span,
+.footer-widget .footer-list li p{
     color: var(--white-color);
 }
 
@@ -1346,4 +1367,8 @@ label {
 
 #toTop:hover {
     background-color: var(--primary-color);
+}
+
+.light-theme #toTop i{
+    color: var(--dark-color);
 }
