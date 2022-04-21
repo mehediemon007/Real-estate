@@ -308,9 +308,22 @@ label {
 }
 
 .ds-sec-banner{
+    position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.ds-sec-banner::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: -1;
 }
 
 .sec-banner-content{
@@ -337,7 +350,7 @@ label {
     left: 0;
     width: 100%;
     padding: 16px 100px;
-    z-index: 5;
+    z-index: 50;
     transition: var(--transition);
 }
 
@@ -629,17 +642,18 @@ label {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     border-radius: 50%;
     font-size: 1.20rem;
     font-weight: var(--font-weight-normal);
     color: var(--primary-color);
     margin-right: 24px;
     line-height: 40px;
+    transition: var(--transition);
 }
 
-.banner-social-links a i{
-    
+.banner-social-links a:hover{
+    background-color: var(--white-color);
 }
 
 .swiper-pagination{
@@ -1081,11 +1095,13 @@ label {
 /* Project Details */
 
 .project-calltoaction{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     background-color: var(--heading-color);
     padding: 24px;
     margin-top: -70px;
+    z-index: 1;
 }
 
 .light-theme .project-calltoaction{
@@ -1354,7 +1370,7 @@ label {
     display: none;
     position: fixed;
     right: 40px;
-    z-index: 999;
+    z-index: 1;
     font-size: 18px;
     color: var(--white-color);
     background: var(--title-color);
