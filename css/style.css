@@ -984,8 +984,8 @@ label {
 
 .single-property{
     position: relative;
+    height: 100%;
     overflow: hidden;
-    margin-bottom: 24px;
 }
 
 .single-property .ppt-image{
@@ -994,6 +994,7 @@ label {
 
 .single-property .ppt-image img{
     width: 100%;
+    height: 100%;
     transition: var(--transition);
 }
 
@@ -1071,6 +1072,7 @@ label {
 
 .single-gallery{   
     position: relative;
+    display: block;
     height: 240px;
     overflow: hidden;
     border-radius: 3px;

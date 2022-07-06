@@ -216,7 +216,7 @@
                     <h1 class="heading-lg aos-animate" data-aos="fade-up" data-aos-duration="500">Featured<sub class="sub-heading">Properties</sub></h1>
                 </div>
                 <div class="properties mt-60">
-                    <div class="row ">
+                    <div class="row g-4">
                         <div class="col-lg-4 col-6">
                             <div class="single-property aos-animate" data-aos="fade-up" data-aos-duration="1000">
                                 <a href="project-details.html" class="ppt-image">
@@ -506,8 +506,12 @@
         const smallSlider = new Swiper('.sm-slider', {
             touchRatio: 0, // disable swipe
             loop: true,
+            speed: 2000,
             slidesPerView: 'auto',
             preloadImages: false,
+            autoplay: {
+                delay: 5000,
+            },
             lazy: {
                 loadPrevNext: true,
                 loadPrevNextAmount: 2,
@@ -558,6 +562,9 @@
             speed: 2000,
             slidesPerView: 'auto',
             preloadImages: false,
+            autoplay: {
+                delay: 2000,
+            },
             lazy: {
                 loadPrevNext: true,
                 loadPrevNextAmount: 2,
