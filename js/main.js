@@ -73,8 +73,11 @@
     // Sticky Nav
     
     const headerContainer = document.querySelector(".ds-header");
+    const logo = document.querySelector(".logo");
+    
     window.onscroll = ()=>{
             this.scrollY > 100 ? headerContainer.classList.add("sticky") : headerContainer.classList.remove("sticky");
+            logo.classList.toggle("sticky")
     }
 
     // Theme Change
